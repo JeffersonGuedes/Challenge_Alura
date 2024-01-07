@@ -133,6 +133,10 @@ h5 {
     font-family: var(--fonte-primaria);
 }
 
+.botoes .botao1 {
+    
+}
+
 .botoes .botao2 button{
     border: none;
     background-color: var(--light-blue-300);
