@@ -33,65 +33,62 @@ body {
     box-sizing: border-box;
 }
 
-h3 {
-    font-family: var(--fonte-primaria);
-    font-size: 1.6rem;
-}
-
-h5 {
-    font-family: var(--fonte-primaria);
-    font-size: 1rem;
-}
-
 .quadradao {
-    height: auto;
+    height: 95vh;
     width: 100vw;
     background-color: rgb(3, 66, 66);
     display: flex;
+    overflow: hidden;
 }
 
 .quadradinho {
     height: 95vh;
-    width: 12vw;
+    width: 11vw;
     background: var(--light-blue-100);
     display: flex;
     justify-content: center;
+    
 }
 
 .logo {
-    margin-top: 3rem;
-    width: 10rem;
+    margin-top: 2.5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .boliadinho {
     height: 95vh;
-    width: 55vw;
+    width: 56vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--light-blue-100);
+    gap: 10px;
 
 }
 
 .caixinha {
     display: flex;
-    margin-top: 13rem;
+    margin-top: 10rem;
 }
 
 .textinho {
     background-color: transparent;
     border: none;
-    font-size: 3.2rem;
+    font-size: 2rem;
     font-family: var(--fonte-primaria);
     color: var(--dark-blue-300);
     flex-grow: 2;
     outline: none;
-    width: 55vw;
-    height: 53vh;
+    width: 50vw;
+    height: 56vh;
     resize: none;
     overflow: hidden;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .textinho::placeholder {
@@ -99,12 +96,11 @@ h5 {
 }
 
 .avisinho {
-    width: 100%;
+    width: 50vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 400;
 }
 
 .aviso {
@@ -117,25 +113,28 @@ h5 {
 
 .botoes {
     height: 150px;
-    width: 55vw;
+    width: 50vw;
     display: flex;
-    gap: 30px;
+    gap: 24px;
     align-items: flex-start;
 }
 
 .botoes button {
-    height: 5.5rem;
-    width: 25rem;
-    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.5vh;
+    width: 22.5vw;
+    border-radius: 1.6rem;
     background-color: var(--dark-blue-400);
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--fonte-primaria);
+    border: solid 1px var(--dark-blue-300);
 }
 
 .botoes .botao2 button{
-    border: none;
-    background-color: var(--light-blue-300);
+    background-color: var(--light-blue-100);
     color: var(--dark-blue-300);
 }
 
@@ -157,11 +156,11 @@ h5 {
 }
 
 .resultado {
-    height: 90vh;
+    height: 88vh;
     width: 28vw;
     background-color: var(--white);
     border-radius: 2.5rem;
-    box-shadow: 10px 7px 30px 1px rgba(0, 0, 0, 0.1), 0 7px 25px 0 rgba(4, 19, 154, 0.19);
+    box-shadow: 6px 1px 4px 1px rgba(0, 0, 0, 0.1), 0 7px 6px 0 rgba(4, 19, 154, 0.19);
 }
 
 .resultado {
@@ -177,17 +176,16 @@ h5 {
 .desenho {
     display: flex;
     justify-content: center;
-    width: 24vw;
+    width: 22vw;
 }
 
-
-.mensagem1 h3 {
-    font-size: 2rem;
+.mensagem1 p {
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
-.mensagem2 h5 {
-    font-size: 1.3rem;
+.mensagem2 p {
+    font-size: 1.05rem;
     font-weight: 400;
 }
 
@@ -198,4 +196,8 @@ h5 {
     align-items: center;
     font-family: var(--fonte-primaria);
     font-weight: 600;
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    
 }
