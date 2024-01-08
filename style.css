@@ -30,7 +30,6 @@
 
 body {
     margin: 0;
-    box-sizing: border-box;
 }
 
 .quadradao {
@@ -38,7 +37,6 @@ body {
     width: 100vw;
     background-color: rgb(3, 66, 66);
     display: flex;
-    overflow: hidden;
 }
 
 .quadradinho {
@@ -47,7 +45,6 @@ body {
     background: var(--light-blue-100);
     display: flex;
     justify-content: center;
-    
 }
 
 .logo {
@@ -56,7 +53,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .boliadinho {
@@ -68,7 +64,6 @@ body {
     flex-direction: column;
     background-color: var(--light-blue-100);
     gap: 10px;
-
 }
 
 .caixinha {
@@ -133,7 +128,7 @@ body {
     border: solid 1px var(--dark-blue-300);
 }
 
-.botoes .botao2 button{
+.botoes .botao2 button {
     background-color: var(--light-blue-100);
     color: var(--dark-blue-300);
 }
@@ -170,13 +165,14 @@ body {
     align-items: center;
     text-align: center;
     font-family: var(--fonte-primaria);
-    
 }
 
 .desenho {
     display: flex;
     justify-content: center;
     width: 22vw;
+    margin: 0 auto;
+    height: auto;
 }
 
 .mensagem1 p {
@@ -199,5 +195,85 @@ body {
     position: absolute;
     width: 100vw;
     height: 5vh;
+}
+
+@media (max-width:1000px) {
+
+    .quadradao {
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .quadradinho {
+        height: 10vh;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo {
+        margin:0;
+    }
+
+    .boliadinho {
+        width: auto;
+    }
+
+    .caixinha {
+        width: 90vw;
+        margin-top: 6rem;
+    }
+
+    .avisinho{
+        width: 90vw;
+    }
+
+    .botoes{
+        height: 10vh;
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .botoes button {
+        width: 43.5vw;
+    }
+
+    .metido {
+        width: 100vw;
+        height: 20vh;
+        padding-bottom: 30px;
+    }
+
+    .resultado {
+        width: 90vw;
+        height: 20vh;
+    }
+
+    .desenho {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:450px) {
+    .caixinha {
+        margin-top: 1rem;
+    }
+
+    .boliadinho{
+        height: 65vh;
+        border: transparent;
+    }
+
+    .textinho {
+        width: 50vw;
+        height: 30vh;
+    }
+
+    .botoes{
+        height: 1vh;
+    }
     
 }
