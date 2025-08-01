@@ -277,3 +277,51 @@ body {
     }
     
 }
+
+.texto-resultado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.resultado-texto {
+    width: 100%;
+    height: 70%;
+    background: transparent;
+    border: none;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--gray-400);
+    resize: none;
+    outline: none;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.botao-copiar {
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    border: 2px solid var(--dark-blue-300);
+    border-radius: 1.5rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-blue-300);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.botao-copiar:hover {
+    background: var(--dark-blue-300);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.botao-copiar:active {
+    transform: translateY(0);
+}
